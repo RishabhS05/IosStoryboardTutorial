@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		63B862CE2A6C689C005A0439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B862CD2A6C689C005A0439 /* AppDelegate.swift */; };
 		63B862D02A6C689C005A0439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B862CF2A6C689C005A0439 /* SceneDelegate.swift */; };
-		63B862D22A6C689C005A0439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B862D12A6C689C005A0439 /* ViewController.swift */; };
 		63B862D52A6C689C005A0439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B862D32A6C689C005A0439 /* Main.storyboard */; };
 		63B862D72A6C689D005A0439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B862D62A6C689D005A0439 /* Assets.xcassets */; };
 		63B862DA2A6C689D005A0439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B862D82A6C689D005A0439 /* LaunchScreen.storyboard */; };
+		63C9BF682A7C51DF001DF256 /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9BF672A7C51DF001DF256 /* ColorsTableVC.swift */; };
+		63C9BF6A2A7C6103001DF256 /* ColorDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9BF692A7C6103001DF256 /* ColorDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63B862CA2A6C689C005A0439 /* ProjectWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B862CD2A6C689C005A0439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B862CF2A6C689C005A0439 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63B862D12A6C689C005A0439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63B862D42A6C689C005A0439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63B862D62A6C689D005A0439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B862D92A6C689D005A0439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B862DB2A6C689D005A0439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C9BF672A7C51DF001DF256 /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		63C9BF692A7C6103001DF256 /* ColorDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				63B862CD2A6C689C005A0439 /* AppDelegate.swift */,
 				63B862CF2A6C689C005A0439 /* SceneDelegate.swift */,
-				63B862D12A6C689C005A0439 /* ViewController.swift */,
+				63C9BF692A7C6103001DF256 /* ColorDetailsVC.swift */,
+				63C9BF672A7C51DF001DF256 /* ColorsTableVC.swift */,
 				63B862D32A6C689C005A0439 /* Main.storyboard */,
 				63B862D62A6C689D005A0439 /* Assets.xcassets */,
 				63B862D82A6C689D005A0439 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B862D22A6C689C005A0439 /* ViewController.swift in Sources */,
 				63B862CE2A6C689C005A0439 /* AppDelegate.swift in Sources */,
+				63C9BF6A2A7C6103001DF256 /* ColorDetailsVC.swift in Sources */,
+				63C9BF682A7C51DF001DF256 /* ColorsTableVC.swift in Sources */,
 				63B862D02A6C689C005A0439 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
