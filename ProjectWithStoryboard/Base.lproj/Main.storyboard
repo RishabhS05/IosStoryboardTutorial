@@ -16,29 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU1-CA-Pn1">
-                                <rect key="frame" x="184" y="445.66666666666669" width="60" height="35"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                </accessibility>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.85951758720000004" green="0.24855854550000001" blue="0.32241529260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" systemColor="labelColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" red="0.73874361519999998" green="0.86836989580000001" blue="0.90417606309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WNp-rB-zLc">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ColorCell" id="zwH-b9-jwY">
+                                        <rect key="frame" x="0.0" y="50" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zwH-b9-jwY" id="a7g-lv-U99">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="onNextPressedAction:" destination="7wV-my-0Zh" eventType="touchUpInside" id="1Da-zY-Amy"/>
+                                    <outlet property="dataSource" destination="7wV-my-0Zh" id="9oe-2l-MFr"/>
+                                    <outlet property="delegate" destination="7wV-my-0Zh" id="kXe-lR-WtI"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pug-g4-aXw"/>
-                        <color key="backgroundColor" red="0.90417606314432986" green="0.65987476499655739" blue="0.20953387811768504" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gU1-CA-Pn1" firstAttribute="centerX" secondItem="UBl-GS-vmr" secondAttribute="centerX" id="0Gr-C2-0oP"/>
-                            <constraint firstItem="gU1-CA-Pn1" firstAttribute="centerY" secondItem="UBl-GS-vmr" secondAttribute="centerY" id="RxU-dX-FRQ"/>
+                            <constraint firstItem="WNp-rB-zLc" firstAttribute="top" secondItem="UBl-GS-vmr" secondAttribute="top" id="KJk-8Q-iMy"/>
+                            <constraint firstAttribute="bottom" secondItem="WNp-rB-zLc" secondAttribute="bottom" id="dXu-Jp-Aos"/>
+                            <constraint firstAttribute="trailing" secondItem="WNp-rB-zLc" secondAttribute="trailing" id="hRn-5f-HR8"/>
+                            <constraint firstItem="WNp-rB-zLc" firstAttribute="leading" secondItem="UBl-GS-vmr" secondAttribute="leading" id="igH-yb-rtg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="x3M-Pq-ktC"/>
@@ -86,10 +89,10 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

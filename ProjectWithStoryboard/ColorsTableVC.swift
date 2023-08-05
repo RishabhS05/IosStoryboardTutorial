@@ -1,32 +1,42 @@
-//
-//  ColorsTableVCViewController.swift
-//  ProjectWithStoryboard
-//
-//  Created by Rishabh Shrivastava on 04/08/23.
-//
-
 import UIKit
 
 class ColorsTableVC: UIViewController {
+    var colors : [UIColor] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       generateRandomColor()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    func generateRandomColor(){
+        for _ in 0..<100{
+            colors.append(createColor())
+        }
+    }
+    func createColor()-> UIColor{
+        let color = UIColor(red: CGFloat.random(in: 0...1) , green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha:1)
+        return color
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let destVC = segue.destination as! ColorDetailsVC
+        destVC.color = sender as? UIColor
     }
-    */
-    
-    @IBAction func onNextPressedAction(_ sender: UIButton) {
-        performSegue(withIdentifier:"ToDetailsColorVC", sender: nil)
+}
+
+extension ColorsTableVC : UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colors.count
     }
+
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       guard let cell =  tableView.dequeueReusableCell(withIdentifier: "ColorCell")
+        else {return UITableViewCell()    }
+    
+        cell.backgroundColor = colors[indexPath.row]
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    
+        let color = colors[indexPath.row]
+        performSegue(withIdentifier: "ToDetailsColorVC", sender:colors[indexPath.row])
+    }
 }
