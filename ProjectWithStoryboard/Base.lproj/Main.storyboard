@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4gi-F4-ZIv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ovH-Gc-k9s">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -8,6 +8,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Buttons-->
+        <scene sceneID="SHg-ha-4KW">
+            <objects>
+                <viewController title="Buttons" id="rej-Rf-J7h" customClass="ButtonsViewController" customModule="ProjectWithStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvQ-Ov-2V0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uR9-He-sJ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Buttons" image="button.programmable.square.fill" catalog="system" id="YXA-mf-2jf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6Z-Ys-b55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-451" y="-1519"/>
+        </scene>
+        <!--Cards-->
+        <scene sceneID="Lvf-Gd-qgl">
+            <objects>
+                <viewController title="Cards" id="zE2-T2-OWE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Lm-N3-1BS">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zrm-hy-g0F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cards" image="creditcard" catalog="system" id="SgJ-V6-7iD" userLabel="Cards"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DfZ-v6-cMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1145" y="-1519"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uUm-c1-UgP">
+            <objects>
+                <tabBarController id="ovH-Gc-k9s" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zPp-lV-Qdg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zE2-T2-OWE" kind="relationship" relationship="viewControllers" id="Mz7-pz-7f3"/>
+                        <segue destination="rej-Rf-J7h" kind="relationship" relationship="viewControllers" id="ihF-m4-NQe"/>
+                        <segue destination="2G0-0X-HWs" kind="relationship" relationship="viewControllers" id="JZw-er-CTw"/>
+                        <segue destination="4gi-F4-ZIv" kind="relationship" relationship="viewControllers" id="760-fE-e3w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAO-Sv-7Bc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="-2259"/>
+        </scene>
         <!--Colors-->
         <scene sceneID="Z0F-sk-DzP">
             <objects>
@@ -51,12 +103,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bq8-kB-swf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370.09345794392522" y="-51.187904967602599"/>
+            <point key="canvasLocation" x="1229" y="-811"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
+        <scene sceneID="PuR-0x-0VG">
+            <objects>
+                <viewController id="2G0-0X-HWs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ODt-E7-2zs">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RTp-E8-w5d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="location.north.circle.fill" catalog="system" id="Fos-KA-U6Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0b-KP-sxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="409" y="-1532"/>
+        </scene>
+        <!--Colors-->
         <scene sceneID="fsd-AY-Od7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4gi-F4-ZIv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Colors" image="list.clipboard.fill" catalog="system" id="pEw-NW-BzH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jnq-No-7Ey">
                         <rect key="frame" x="0.0" y="47" width="428" height="44"/>
@@ -69,7 +138,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXK-hb-eOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529.90654205607473" y="-51.187904967602599"/>
+            <point key="canvasLocation" x="1228" y="-1532"/>
         </scene>
         <!--ColorsDetails-->
         <scene sceneID="pKi-iM-OaY">
@@ -85,10 +154,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afg-VK-UgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1168" y="-51"/>
+            <point key="canvasLocation" x="2057" y="-811"/>
         </scene>
     </scenes>
     <resources>
+        <image name="button.programmable.square.fill" catalog="system" width="128" height="114"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="list.clipboard.fill" catalog="system" width="103" height="128"/>
+        <image name="location.north.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
