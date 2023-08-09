@@ -1,5 +1,10 @@
 import UIKit
-
+/**
+ Create custom Navigation ViewController or add in existing app using storyboard.
+ select main ViewController
+ Go to Editor in xcode
+ select EmbedIn > Navigation View Controller
+ */
 class ColorsTableVC: UIViewController {
     enum Cells{
          static let  colorCell = "ColorCell"
