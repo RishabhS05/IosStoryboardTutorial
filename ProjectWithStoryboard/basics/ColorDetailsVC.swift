@@ -14,6 +14,9 @@ class ColorDetailsVC: UIViewController {
         super.init(coder: coder)
         print("init- lifecycle of ViewController")
     }
+//   override this method when not using storyboard or nib.
+// you overide this when you create your view hierarchy programtically.
+//
 //    override func loadView() {
 //        print("0) - loadView()")
 //    }
