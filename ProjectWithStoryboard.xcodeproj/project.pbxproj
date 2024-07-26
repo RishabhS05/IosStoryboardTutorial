@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63474D082C4C611900D332BB /* readmeSwiftBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63474D072C4C611900D332BB /* readmeSwiftBasics.swift */; };
 		63A6B68D2A7E5DB8005AC94B /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6B68C2A7E5DB8005AC94B /* UIColor+Ext.swift */; };
 		63B862CE2A6C689C005A0439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B862CD2A6C689C005A0439 /* AppDelegate.swift */; };
 		63B862D02A6C689C005A0439 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B862CF2A6C689C005A0439 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63474D072C4C611900D332BB /* readmeSwiftBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readmeSwiftBasics.swift; sourceTree = "<group>"; };
 		63A6B68C2A7E5DB8005AC94B /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		63B862CA2A6C689C005A0439 /* ProjectWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B862CD2A6C689C005A0439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63474D052C4C4A2400D332BB /* basics */ = {
+			isa = PBXGroup;
+			children = (
+				63C9BF692A7C6103001DF256 /* ColorDetailsVC.swift */,
+				63474D072C4C611900D332BB /* readmeSwiftBasics.swift */,
+			);
+			path = basics;
+			sourceTree = "<group>";
+		};
 		63B862C12A6C689C005A0439 = {
 			isa = PBXGroup;
 			children = (
@@ -62,10 +73,10 @@
 		63B862CC2A6C689C005A0439 /* ProjectWithStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				63474D052C4C4A2400D332BB /* basics */,
 				63C3866E2A83213800AE26AE /* ButtonsViewController.swift */,
 				63B862CD2A6C689C005A0439 /* AppDelegate.swift */,
 				63B862CF2A6C689C005A0439 /* SceneDelegate.swift */,
-				63C9BF692A7C6103001DF256 /* ColorDetailsVC.swift */,
 				63C9BF672A7C51DF001DF256 /* ColorsTableVC.swift */,
 				63B862D32A6C689C005A0439 /* Main.storyboard */,
 				63B862D62A6C689D005A0439 /* Assets.xcassets */,
@@ -152,6 +163,7 @@
 				63A6B68D2A7E5DB8005AC94B /* UIColor+Ext.swift in Sources */,
 				63C9BF682A7C51DF001DF256 /* ColorsTableVC.swift in Sources */,
 				63C3866F2A83213800AE26AE /* ButtonsViewController.swift in Sources */,
+				63474D082C4C611900D332BB /* readmeSwiftBasics.swift in Sources */,
 				63B862D02A6C689C005A0439 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
